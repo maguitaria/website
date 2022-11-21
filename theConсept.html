@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>THE CONCEPT website </title> <!-- name of  a document-->
+    <link rel="stylesheet" type="text/css" href="theConsept.css">
+    <link href="StyleSheet.css" rel="stylesheet">
+</head>
+<header>
+    <div class="logo">
+        <span style="--i:1">T</span>
+        <span style="--i:1">H</span>
+        <span style="--i:1">E</span>
+        <span style="--i:2"> </span>
+        <span style="--i:3">C</span>
+        <span style="--i:3">O</span>
+        <span style="--i:3">N</span>
+        <span style="--i:3">C</span>
+        <span style="--i:3">E</span>
+        <span style="--i:3">P</span>
+        <span style="--i:3">T</span>
+    </div>
+</header>
+<nav>
+
+    <nav class="navMenu">
+        <a href="#"><a href="#section1">Home</a></a>
+        <a href="#"><a href="#section2">Blog</a></a>
+        <a href="#"><a href="#section3">Work</a></a>
+        <a href="#"><a href="#section4">About</a></a>
+        <div class="dot"></div>
+    </nav>
+</nav>
+
+<body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close">
+    </label>
+    <div class="wrapper">
+        <ul>
+            <!-- navigation vertical menu-->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </div>
+
+
+    <div class="sticky-toolbar-container">
+        <!-- you can see how to make it here : https://webdesign.tutsplus.com/tutorials/how-to-create-a-sticky-toolbar-with-css-and-javascript--cms-40630 -->
+        <button aria-label="open toolbar" type="button" class="open-toolbar toggle-toolbar">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40" height="40"
+                viewBox="0 0 24 24">
+                <path d="M12.293 20.707 3.586 12l8.707-8.707 1.414 1.414L6.414 12l7.293 7.293z" />
+                <path d="M18.293 20.707 9.586 12l8.707-8.707 1.414 1.414L12.414 12l7.293 7.293z" />
+            </svg>
+        </button>
+
+        <div class="sticky-toolbar">
+            <a aria-label="go to the cart page" href="" data-tooltip="view cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40" height="40"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M17 16H8.387l.334-1h10.034l2.571-9H6.644l-.9-3H3v2h1.256l2.695 8.984-.708 2.125A2.995 2.995 0 0 0 4 19c0 1.654 1.346 3 3 3s3-1.346 3-3c0-.352-.072-.686-.184-1h4.369A2.943 2.943 0 0 0 14 19c0 1.654 1.346 3 3 3s3-1.346 3-3-1.346-3-3-3zm1.674-8-1.429 5H8.744l-1.5-5h11.43zM8 19c0 .551-.449 1-1 1s-1-.449-1-1 .449-1 1-1 1 .449 1 1zm9 1c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1z" />
+                </svg>
+            </a>
+
+            <a aria-label="give us a call" href="" data-tooltip="call us">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40" height="40"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M15.894 22.239c-3.018 0-6.569-1.602-9.551-4.582-4.758-4.759-6-10.971-2.828-14.143a5.89 5.89 0 0 1 3.392-1.696l.76-.11 2.797 6.522-2.797 1.398c.648 1.228 1.63 2.497 2.919 3.786 1.229 1.229 2.497 2.204 3.77 2.896l1.314-2.573 6.483.926.038.827c.095 2.059-.495 3.786-1.706 4.996-1.184 1.184-2.793 1.753-4.591 1.753zM6.461 3.972a3.9 3.9 0 0 0-1.532.958c-2.3 2.299-1.004 7.48 2.828 11.313 3.834 3.833 9.014 5.126 11.314 2.828.766-.766 1.042-1.776 1.11-2.67l-3.367-.481-.646 1.294a1.974 1.974 0 0 1-1.186 1.01 2.044 2.044 0 0 1-1.583-.157c-1.44-.783-2.863-1.873-4.228-3.238-1.43-1.43-2.529-2.859-3.268-4.248a2.008 2.008 0 0 1-.14-1.561 1.989 1.989 0 0 1 1.012-1.182l1.106-.553-1.42-3.313z" />
+                </svg>
+            </a>
+
+            <a aria-label="go to the contact page" href="" data-tooltip="email us">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40" height="40"
+                    viewBox="0 0 24 24">
+                    <path d="M2 4v16h20V4H2zm18 2v.465l-8 5.333-8-5.333V6h16zM4 18V8.869l8 5.334 8-5.334V18H4z" />
+                </svg>
+            </a>
+
+            <button aria-label="close toolbar" type="button" class="close-toolbar toggle-toolbar">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40" height="40"
+                    viewBox="0 0 24 24">
+                    <path d="m11.707 20.707-1.414-1.414L17.586 12l-7.293-7.293 1.414-1.414L20.414 12z" />
+                    <path d="m5.707 20.707-1.414-1.414L11.586 12 4.293 4.707l1.414-1.414L14.414 12z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</body>
+<div class="home" style="position:relative; left: 0px; top: 600px" id="section1">
+    <h1>Home</h1>
+</div>
+<div class="blog" style="position:relative; left: 0px; top: 600px" id="section2">
+    <h1>Blog</h1>
+</div>
+<div class="work" style="position:relative; left: 0px; top: 600px" id="section3">
+    <h1>Work</h1>
+</div>
+<div class="about" style="position:relative; left: 0px; top: 600px" id="section4">
+    <h1>About</h1>
+</div>
+<footer>
+    <p>test</p>
+</footer>
+
+</html>
+<style>
+    /* header:{
+        animation-duration: 3s;
+        animation-name: heading;
+        /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    /* animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+    } */
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Oswald', sans-serif;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    #section1 {
+        height: 600px;
+        background-color: green;
+    }
+    #section2 {
+        height: 600px;
+        background-color: gold;
+    }
+    #section3 {
+        height: 600px;
+        background-color: coral;
+    }
+    #section4 {
+        height: 600px;
+        background-color: gray;
+    }
+
+    header {
+        background-color: #151719;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 40px; */
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding-left: 10px;
+        text-align: center;
+        height: 80px;
+        padding-top: 5px;
+    }
+
+    .logo {
+        position: relative;
+        -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+        font-size: 27px;
+        
+    }
+
+    .logo span {
+        font-family: 'Alfa Slab One', cursive;
+        position: relative;
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        animation: wavy 2s;
+        animation-delay: calc(.1s * var(--i));
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes wavy {
+
+        0%,
+        40%,
+        100% {
+            transform: translateY(0)
+        }
+
+        20% {
+            transform: translateY(-20px)
+        }
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+    body {
+
+        font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+        height: 2300px;
+        background: #272727;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .navMenu {
+        position: static;
+        top: 5%;
+        left: 70%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .navMenu a {
+        color: var(--darkgrey);
+        text-decoration: none;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: inline-block;
+        width: 80px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navMenu a:hover {
+        color: #ffffff;
+    }
+
+    .navMenu .dot {
+        width: 6px;
+        height: 6px;
+        background: black;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navMenu a:nth-child(1):hover~.dot {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .navMenu a:nth-child(2):hover~.dot {
+        -webkit-transform: translateX(110px);
+        transform: translateX(110px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .navMenu a:nth-child(3):hover~.dot {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 0,5; /* changed the opacity from 1 to 0,5 */
+    }
+
+    .navMenu a:nth-child(4):hover~.dot {
+        -webkit-transform: translateX(285px);
+        transform: translateX(285px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .subbox:hover {
+        float: left;
+        color: rgb(212, 151, 151);
+        display: block;
+    }
+
+
+
+
+    :root {
+
+        --white: #F7F2EF;
+        --lightgrey: #e7e3e2;
+        --darkgrey: #aba6a1;
+        --black: #2f2e2c;
+    }
+
+    button {
+        cursor: pointer;
+        background: white;
+        border: none;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    body {
+        font-family: "IBM Plex Sans", sans-serif;
+        background: var(--light-grey);
+    }
+
+    .sticky-toolbar-container {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 80px;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .sticky-toolbar-container .toggle-toolbar {
+        background: var(--lightgrey);
+    }
+
+    .sticky-toolbar-container .toggle-toolbar.open-toolbar {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+
+    .sticky-toolbar-container .sticky-toolbar {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+    }
+
+    .sticky-toolbar-container .toggle-toolbar.open-toolbar,
+    .sticky-toolbar-container .sticky-toolbar {
+        transition: transform 0.5s;
+    }
+
+    .sticky-toolbar-container svg {
+        fill: var(--black);
+    }
+
+    .sticky-toolbar-container .sticky-toolbar>*,
+    .sticky-toolbar-container .toggle-toolbar.open-toolbar {
+        padding: 12px;
+    }
+
+    .sticky-toolbar-container .sticky-toolbar a {
+        position: relative;
+        margin-bottom: 1px;
+        background: var(--white);
+    }
+
+    .sticky-toolbar-container .sticky-toolbar a::before,
+    .sticky-toolbar-container .sticky-toolbar a::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+    }
+
+    .sticky-toolbar-container .sticky-toolbar a::before {
+        content: attr(data-tooltip);
+        right: calc(100% + 5px);
+        font-size: 14px;
+        white-space: nowrap;
+        padding: 4px 8px;
+        color: var(--whip);
+        background: var(--mocha);
+    }
+
+    .sticky-toolbar-container .sticky-toolbar a::after {
+        content: "";
+        right: 100%;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid var(--mocha);
+
+    }
+
+    .sticky-toolbar-container .sticky-toolbar a:hover::before,
+    .sticky-toolbar-container .sticky-toolbar a:hover::after {
+        opacity: 1;
+    }
+
+    /*CLASSES*/
+    .sticky-toolbar-container.show-toolbar .open-toolbar {
+        transform: translateY(-50%) translateX(100%);
+    }
+
+    .sticky-toolbar-container.show-toolbar .sticky-toolbar {
+        transform: none;
+    }
+
+
+    /* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: black;
+        text-align: center;
+    }
+</style>
+<script>
+    const toggleToolbar = document.querySelectorAll(".toggle-toolbar");
+    const stickyToolbarContainer = document.querySelector(
+        ".sticky-toolbar-container"
+    );
+
+    toggleToolbar.forEach(function (element) {
+        element.addEventListener("click", function () {
+            stickyToolbarContainer.classList.toggle("show-toolbar");
+        });
+    });
+
+</script>

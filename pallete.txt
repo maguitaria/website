@@ -1,0 +1,6 @@
+/content/v1/59d296dc6f4ca35b8e07d4f8/1522427986525-RLR682SPN3YUPG8ET2HP/15+Color+Palettes-06.png
+Black: #070502 
+| Mocha: #382a1d |
+Caramel: #8f614b |
+ Heavy Cream: #b69b7d |
+  Whip: #decbb1
