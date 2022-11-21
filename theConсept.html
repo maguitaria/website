@@ -21,32 +21,43 @@
         <span style="--i:3">T</span>
     </div>
 </header>
-<nav>
 
-    <nav class="navMenu">
-        <a href="#"><a href="#section1">Home</a></a>
-        <a href="#"><a href="#section2">Blog</a></a>
-        <a href="#"><a href="#section3">Work</a></a>
-        <a href="#"><a href="#section4">About</a></a>
-        <div class="dot"></div>
+<section class="p-menu1">
+    <nav id="navbar" class="navigation" role="navigation">
+        <input id="toggle1" type="checkbox" />
+        <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+        </label>
+
+        <nav class="menu1">
+            <a class="link1" href="">Our Models</a>
+            <a class="link1" href="">Specialties</a>
+            <a class="link1" href="">About</a>
+            <a class="link1" href="">Blog</a>
+            <a class="contactUs" href="">Contact</a>
+        </nav>
     </nav>
+</section>
+
+<ul class="slide">
+    <li><a href="#"><a href="#section1">Home</a></a></li>
+    <li><a href="#"><a href="#section2">Blog</a></a></li>
+    <li><a href="#"><a href="#section3">Work</a></a></li>
+    <li><a href="#"><a href="#section4">About</a></a></li>
+</ul>
+</div>
+
+<!-- <ul class="slide">
+        <li><a href="#"><a href="#section1">Home</a></a></li>
+        <li><a href="#"><a href="#section2">Blog</a></a></li>
+        <li><a href="#"><a href="#section3">Work</a></a></li>
+        <li><a href="#"><a href="#section4">About</a></a></li>
+    </ul> -->
 </nav>
 
 <body>
-    <input type="checkbox" id="active">
-    <label for="active" class="menu-btn"><span></span></label>
-    <label for="active" class="close">
-    </label>
-    <div class="wrapper">
-        <ul>
-            <!-- navigation vertical menu-->
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Feedback</a></li>
-        </ul>
-    </div>
 
 
     <div class="sticky-toolbar-container">
@@ -132,21 +143,141 @@
         font-family: 'Lato', sans-serif;
         font-family: 'Oswald', sans-serif;
     }
-    html{
+
+    html {
         scroll-behavior: smooth;
     }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .p-menu1 {
+        height: 50%;
+    }
+
+
+
+
+    /* Hamburger */
+    .hamburger1 {
+        height: 45px;
+        margin: 10px;
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: left;
+        z-index: 120;
+    }
+
+    .hamburger1 div {
+        background-color: rgb(61, 61, 61);
+        position: relative;
+        width: 40px;
+        height: 3px;
+        margin-top: 7px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #toggle1 {
+        display: none;
+    }
+
+    #toggle1:checked+.hamburger1 .top {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        margin-top: 22.5px;
+    }
+
+    #toggle1:checked+.hamburger1 .meat {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        margin-top: -5px;
+    }
+
+    #toggle1:checked+.hamburger1 .bottom {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    #toggle1:checked~.menu1 {
+        height: 340px;
+    }
+
+
+    /* Menu */
+    .menu1 {
+        width: 100%;
+        background-color: black;
+        margin: 0;
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: 1fr repeat(4, 0.5fr);
+        grid-row-gap: 25px;
+        padding: 0;
+        list-style: none;
+        clear: both;
+        width: auto;
+        text-align: center;
+        height: 0px;
+        overflow: hidden;
+        transition: height .4s ease;
+        z-index: 120;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .menu1 a:first-child {
+        margin-top: 40px;
+    }
+
+    .menu1 a:last-child {
+        margin-bottom: 40px;
+    }
+
+    .link1 {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        font: 700 20px 'Oswald', sans-serif;
+        color: #e7e3e2;
+    }
+
+    .contactUs {
+        color: #e7e3e2;
+    }
+
+    .contactUs:hover {
+        background-color: #fff;
+        color: var(--black);
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .link1:hover {
+        background-color: #fff;
+        color: var(--black);
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
     #section1 {
         height: 600px;
         background-color: green;
     }
+
     #section2 {
         height: 600px;
         background-color: gold;
     }
+
     #section3 {
         height: 600px;
         background-color: coral;
     }
+
     #section4 {
         height: 600px;
         background-color: gray;
@@ -170,7 +301,7 @@
         position: relative;
         -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
         font-size: 27px;
-        
+
     }
 
     .logo span {
@@ -200,91 +331,41 @@
 
     @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-    body {
 
-        font-family: "Montserrat", sans-serif;
+    nav li#user-info {
+        position: absolute;
+        bottom: 0;
+        width: 80%;
     }
 
-    body {
-        height: 2300px;
-        background: #272727;
-        font-family: "Montserrat", sans-serif;
+    nav li#user-info>span {
+        display: block;
+        float: right;
+        font-size: 0.9em;
+        position: relative;
+        opacity: 0.6;
     }
 
-    .navMenu {
-        position: static;
-        top: 5%;
-        left: 70%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-
-    .navMenu a {
-        color: var(--darkgrey);
-        text-decoration: none;
-        font-size: 1.2em;
-        text-transform: uppercase;
-        font-weight: 500;
-        display: inline-block;
-        width: 80px;
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .navMenu a:hover {
-        color: #ffffff;
-    }
-
-    .navMenu .dot {
-        width: 6px;
-        height: 6px;
-        background: black;
+    nav li#user-info>span:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        display: block;
+        position: absolute;
+        background: green;
+        left: -20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
         border-radius: 50%;
-        opacity: 0;
-        -webkit-transform: translateX(30px);
-        transform: translateX(30px);
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
     }
 
-    .navMenu a:nth-child(1):hover~.dot {
-        -webkit-transform: translateX(30px);
-        transform: translateX(30px);
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        opacity: 1;
-    }
-
-    .navMenu a:nth-child(2):hover~.dot {
-        -webkit-transform: translateX(110px);
-        transform: translateX(110px);
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        opacity: 1;
-    }
-
-    .navMenu a:nth-child(3):hover~.dot {
-        -webkit-transform: translateX(200px);
-        transform: translateX(200px);
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        opacity: 0,5; /* changed the opacity from 1 to 0,5 */
-    }
-
-    .navMenu a:nth-child(4):hover~.dot {
-        -webkit-transform: translateX(285px);
-        transform: translateX(285px);
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        opacity: 1;
-    }
 
     .subbox:hover {
         float: left;
         color: rgb(212, 151, 151);
         display: block;
     }
-
 
 
 
@@ -418,6 +499,11 @@
     }
 </style>
 <script>
+    $('.open-menu-btn').on('click', function () {
+        if ($('body').hasClass('closed-menu')) {
+            $('body').removeClass('closed-menu');
+        } else $('body').addClass('closed-menu');
+    });
     const toggleToolbar = document.querySelectorAll(".toggle-toolbar");
     const stickyToolbarContainer = document.querySelector(
         ".sticky-toolbar-container"
