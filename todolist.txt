@@ -3,3 +3,5 @@
   https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
 
   https://www.w3schools.com/cssref/tryit.php?filename=trycss3_animation-iteration-count
+
+  https://x11.x10hosting.com:2222/CMD_FILE_MANAGER?path=%2Fdomains%2Ftheconcept.x10.mx%2Fpublic_html 
