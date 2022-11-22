@@ -54,7 +54,8 @@
         <div class="ac-center box">
             <div class="ac">
                 <div class="img-cover">
-                    <img src="/Users/maria/website/pics/rapper_cap-removebg-preview.png" alt="rapper cap">
+                    <img src="/Users/maria/website/pics/rapper_cap-removebg-preview.png"
+                        alt="rapper cap">
                 </div>
                 <p>NO RAPPER.</p>
                 <div class="rating">
@@ -66,21 +67,66 @@
                 </div>
                 <div class="price">€29</div>
             </div>
-            <div class="ac">
-                <div class="img-cover">
-                    <img src="/Users/maria/website/pics/singlewhiteback_600x-removebg-preview.png" alt="space hoodie" />
+            <div class="ac-center box">
+                <div class="ac">
+                    <div class="img-cover">
+                        <img src="/pics/CASIO-A-168WA-1.jpg" alt="rapper cap">
+                    </div>
+                    <p>NO RAPPER.</p>
+                    <div class="rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                    </div>
+                    <div class="price">€29</div>
                 </div>
-                <p>STILL SINGLE HOODIE.</p>
-                <!--https://capsapparel.com/products/still-single-hoodie -->
-                <div class="rating">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bx-star"></i>
+                <div class="ac">
+                    <div class="img-cover">
+                        <img src="/pics/cargo_pants.png" alt="rapper cap">
+                        <!-- https://www.boohooman.com/eu/straight-leg-jumbo-corduroy-cargo-trouser/BMM18529.html -->
+                    </div>
+                    <p>Jumbo cargo pants</p>
+                    <div class="rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <!-- <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i> -->
+                    </div>
+                    <div class="price">€29</div>
                 </div>
-                <div class="price">€41</div>
-            </div>
+                <div class="ac">
+                    <div class="img-cover">
+                        <img src="/Users/maria/website/pics/singlewhiteback_600x-removebg-preview.png"
+                            alt="space hoodie" />
+                    </div>
+                    <p>STILL SINGLE HOODIE.</p>
+                    <!--https://capsapparel.com/products/still-single-hoodie -->
+                    <div class="rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bx-star"></i>
+                    </div>
+                    <div class="price">€41</div>
+                </div>
+                <div class="ac">
+                    <div class="img-cover">
+                        <img src="/Users/maria/website/pics/rapper_cap-removebg-preview.png" alt="rapper cap">
+                    </div>
+                    <p>NO RAPPER.</p>
+                    <div class="rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bx-star"></i>
+                        <i class="bx bx-star"></i>
+                    </div>
+                    <div class="price">€29</div>
+                </div>
     </section>
     <!-- Shop By Category -->
     <section class="section">
@@ -115,7 +161,7 @@
         <div class="ac-center box">
             <div class="ac">
                 <div class="img-cover">
-                    <img src="hand3.jpg" alt="" />
+                    <img src="/pics/rapper_cap-removebg-preview.png" alt="casio_clock" />
                 </div>
                 <p>Luxuary Leather hand bag-black</p>
                 <div class="rating">
@@ -284,6 +330,8 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 75px);
+        justify-content: center;
+
     }
 
     header {
@@ -455,11 +503,16 @@
         object-fit: cover;
     }
 
+    img #arrival { /* try to create the classes to organise the size of items on the page */
+        width: 600px;
+        height: 300px;
+    }
+
     .ac-center {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 80px;
-        margin-bottom: 80px;
+        gap: 40px;
+        margin-bottom: 40px;
 
     }
 
@@ -469,7 +522,8 @@
 
     .ac .img-cover {
         overflow: hidden;
-
+        width: 300px;
+        height: 300px;
 
     }
 
