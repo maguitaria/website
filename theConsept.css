@@ -14,14 +14,6 @@ html {
 
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 75px);
-    justify-content: center;
-
-}
-
 header {
     background-color: #151719;
     display: flex;
@@ -184,16 +176,17 @@ a {
     transition: all 0.3s ease;
 }
 
-img {
+/* Body */
+/* img {
 
     width: 200px;
     height: 300px;
     object-fit: cover;
-}
+} */
 
 img #arrival {
     /* try to create the classes to organise the size of items on the page */
-    width: 600px;
+    width: 300px;
     height: 300px;
 }
 
@@ -236,7 +229,7 @@ img #arrival {
     }
 }
 
-.ab {
+/* .ab {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, 4vw);
@@ -289,7 +282,7 @@ img #arrival {
     grid-row-start: 5;
     grid-row-end: 9;
 }
-
+ */
 
 @media only screen and (max-width: 600px) {
     .gallary {
@@ -401,6 +394,23 @@ a {
     color: inherit;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.item {
+    flex: 0 32%;
+    height: 300px;
+    width: 200px;
+    margin-bottom: 2%;
+    /* (100-32*3)/2 */
+    background-color: red;
+}
+
 body {
     font-family: "IBM Plex Sans", sans-serif;
     background: var(--light-grey);
@@ -459,3 +469,47 @@ body {
 .social-links a:hover {
     color: #441407;
 }
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+
+    display: flex;
+    /* so child elements can use flexbox stuff too! */
+}
+
+.product-image img {
+    max-width: 100%;
+}
+
+.product-info {
+    margin-top: auto;
+    text-align: center;
+    padding-bottom: 16px;
+    transition: all 500ms ease-in-out;
+}
+
+@media (max-width: 920px) {
+    .product-card {
+        flex: 1 21%;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-card {
+        flex: 1 46%;
+    }
+}
+
+/* Select the first two */
+.products .product-card:first-child,
+.products .product-card:nth-child(2) {
+    flex: 2 46%;
+}
+
