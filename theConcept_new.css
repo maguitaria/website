@@ -64,6 +64,16 @@ a {
     text-decoration: none;
 }
 
+.cart-icon {
+
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -500px;
+    position: relative;
+    bottom: 15px;
+}
+
 /* Hamburger */
 .hamburger1 {
     height: 20px;
@@ -299,7 +309,28 @@ a {
     border-top: 1px solid #f3f3f3;
 }
 
+.add-cart {
+    position: absolute;
+    /* i changed it instead of absolute to make icon look more to the up */
+    left: -20px;
+    bottom: -60px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    display: none;
+    animation-name: fade;
+    animation-delay: 3s;
+
+}
+
 .p-name {
+    /*product cart */
     color: #727272;
 }
 
@@ -314,46 +345,9 @@ a {
 
 }
 
-.add-cart {
-    position: absolute;
-    left: -20px;
-    bottom: -60px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: black;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-    display: none;
-    animation-name: fade;
-    animation-delay: 3s;
 
-}
 
-.eye {
-    margin: 100px;
-    width: 13px;
-    height: 13px;
-    border: solid 1px #000;
-    border-radius: 75% 15%;
-    position: relative;
-    transform: rotate(45deg);
-}
 
-.eye:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border: solid 1px #000;
-    border-radius: 50%;
-    left: 3px;
-    top: 3px;
-}
 
 .add-cart:hover {
     background-color: grey;
