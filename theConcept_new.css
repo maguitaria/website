@@ -42,7 +42,6 @@ body {
   .dropdown-content a:hover {background-color: #ddd;}
   
   .dropdown:hover .dropdown-content {display: block;}
-  
   .dropdown:hover .dropbtn {background-color: black;
 }
 .svg-icon {
@@ -55,6 +54,7 @@ body {
     fill: currentColor;
    transition: fill .3s;
 }
+
 header {
     left: auto;
     background-color: #151719;
