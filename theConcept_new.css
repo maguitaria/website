@@ -14,6 +14,7 @@ body {
 }
 
 header {
+    left: auto;
     background-color: #151719;
     display: flex;
     justify-content: center;
@@ -93,7 +94,7 @@ a {
 }
 
 /* Hamburger */
-.hamburger1 {
+/*.hamburger1 {
     height: 20px;
     margin: 5px;
     display: -ms-grid;
@@ -137,6 +138,13 @@ a {
 
 #toggle1:checked~.menu1 {
     height: 340px;
+}*/
+
+
+.currancyButton {
+    background-color: black;
+    color: white;
+    left: 1;
 }
 
 
