@@ -10,11 +10,21 @@
 </head>
 <header>
     <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
+        MENU
+        <svg class="svg-icon"
+             role="img"
+             height="10"
+             width="10"
+             viewBox="0 0 10 10"
+             aria-hidden="true"
+             focusable="false">
+            <path d="m1 7h8v2h-8zm0-3h8v2h-8zm0-3h8v2h-8z"/>
+        </svg>
+        <button class="dropbtn"></button>
         <div class="dropdown-content">
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">Accesories</a>
+          <a href="Man.html">MAN</a>
+          <a href="woman.html">WOMAN</a>
+          <a href="accessories.html">ACCESSORIES</a>
         </div>
       </div>
     <div class="logo">
@@ -32,15 +42,9 @@
             <span style="--i:3">T</span>
         </a>
     </div>
-   <!--<section class="p-menu1">
-        <nav id="navbar" class="navigation" role="navigation">
-            <input id="toggle1" type="checkbox" />
-            <label class="hamburger1" for="toggle1">
-                <div class="top"></div>
-                <div class="meat"></div>
-                <div class="bottom"></div>
-            </label>-->
-            <select class="currancyButton">
+
+ 
+            <select class="currencyButton">
                 <option>EUR</option>
                 <option>UAH</option>
                 <option>USD</option>
@@ -55,45 +59,29 @@
             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">   
             </path> 
             </svg>
-        </a>
-        
-        </nav>
-    
-    <!--<Button
-    onClick={openCart}
-    style= { width: "3rem", height: "3rem", position: "relative" }
-    
-    className="rounded-circle"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 576 512"
-      fill="currentColor"
-    >
-      <path d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z" />
-    </svg>
+  
+  <select class="currencyButton">
+        <option>EUR</option>
+        <option>UAH</option>
+        <option>USD</option>
+    </select>
 
-    <div
-      className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
-      style={{
-        color: "white",
-        width: "1.5rem",
-        height: "1.5rem",
-        position: "absolute",
-        bottom: 0,
-        right: 0,
-        transform: "translate(25%, 25%)",
-      }}
-    >
-      {cartQuantity}
-    </div>
-  </Button>-->
+    <a href="cart.html" target="_self">
+        <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+            </path>
+        </svg>
+    </a>
+    
 </header>
 
 </nav>
 
 <body>
-    
+
     <ul>
         <!--products----------------------->
         <div class="product-container">
@@ -101,6 +89,7 @@
             <div class="product-box">
                 <!--product-img------------>
                 <div class="product-img">
+
                     <!--add-cart---->
                     <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i>
                         <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -110,6 +99,7 @@
                             <circle cx="20" cy="21" r="1"></circle>
                             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
                         </svg>
+
                     </a>
                     <!--img------>
                     <img src='pics/Y-3 T-short.webp'>
@@ -117,25 +107,26 @@
                 <!--product-details-------->
                 <div class="product-details">
                     <li data-cost='22.00'>
-                    <a href="#" class="p-name">Y-3 T-Shirt</a>
-                    <span class="p-price">22.00 </span>
-                </li>
+                        <a href="#" class="p-name">Y-3 T-Shirt</a>
+                        <span class="p-price">22.00 </span>
+                    </li>
                 </div>
             </div>
+
+
             <!--product-box-2---------->
             <div class="product-box">
                 <!--product-img------------>
                 <div class="product-img">
                     <!--add-cart---->
-                    <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i>
-                        <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <circle cx="9" cy="21" r="1"></circle>
-                            <circle cx="20" cy="21" r="1"></circle>
-                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                        </svg>
+                    <a href="#" class="add-cart">
                     </a>
+                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
                     <!--img------>
                     <img src="pics/polo short.webp">
 
@@ -152,7 +143,7 @@
                         </svg>
                     </a>
                     <li data-cost='22.00'>
-                    <span class="p-price" >22.00</span>
+                        <span class="p-price">22.00</span>
                     </li>
                 </div>
             </div>
@@ -162,7 +153,7 @@
                 <div class="product-img">
                     <!--add-cart---->
                     <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
+
                         <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -177,8 +168,8 @@
                 <!--product-details-------->
                 <div class="product-details">
                     <li data-cost='22.00'>
-                    <a href="#" class="p-name">Versace T-Shirt</a>
-                    <span class="p-price">22.00</span>
+                        <a href="#" class="p-name">Versace T-Shirt</a>
+                        <span class="p-price">22.00</span>
                     </li>
                 </div>
             </div>
@@ -188,7 +179,7 @@
                 <div class="product-img">
                     <!--add-cart---->
                     <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
+
                         <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -203,8 +194,8 @@
                 <!--product-details-------->
                 <div class="product-details">
                     <li data-cost='22.00'>
-                    <a href="#" class="p-name">MM6 long T-Shirt</a>
-                    <span class="p-price">22.00</span>
+                        <a href="#" class="p-name">MM6 long T-Shirt</a>
+                        <span class="p-price">22.00</span>
                     </li>
                 </div>
             </div>
@@ -213,14 +204,8 @@
                 <!--product-img------------>
                 <div class="product-img">
                     <!--add-cart---->
-                    <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i>
-                        <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <circle cx="9" cy="21" r="1"></circle>
-                            <circle cx="20" cy="21" r="1"></circle>
-                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                        </svg>
+
+                    <a href="#" class="add-cart">
                     </a>
                     <!--img------>
                     <img src="pics/los_angeles.png">
@@ -228,8 +213,8 @@
                 <!--product-details-------->
                 <div class="product-details">
                     <li data-cost='22.00'>
-                    <a href="#" class="p-name">Los Angeles hoodie</a>
-                    <span class="p-price">22.00</span>
+                        <a href="#" class="p-name">Los Angeles hoodie</a>
+                        <span class="p-price">22.00</span>
                     </li>
                 </div>
             </div>
@@ -253,9 +238,9 @@
                 </div>
                 <!--product-details-------->
                 <div class="product-details">
-                    <li data-cost='22.00'>
-                    <a href="#" class="p-name">Cargo pants</a>
-                    <span class="p-price">22.00</span>
+                    <li data-cost='100.00'>
+                        <a href="#" class="p-name">Cargo pants</a>
+                        <span class="p-price">22.00</span>
                     </li>
                 </div>
             </div>
@@ -279,8 +264,8 @@
                 <!--product-details-------->
                 <div class="product-details">
                     <li data-cost='22.00'>
-                    <a href="#" class="p-name">fur hat</a>
-                    <span class="p-price">22.00</span>
+                        <a href="#" class="p-name">fur hat</a>
+                        <span class="p-price">22.00</span>
                     </li>
                 </div>
             </div>
@@ -305,62 +290,62 @@
                 <!--product-details-------->
                 <div class="product-details">
                     <li data-cost='22.00'>
-                    <a href="#" class="p-name">Space hoodie</a>
-                    <span class="p-price">22.00</span>
+                        <a href="#" class="p-name">Space hoodie</a>
+                        <span class="p-price">22.00</span>
                     </li>
-                </ul>
-                </div>
-            </div>
-        </div>
-        <!---sale------------------------------------>
-        <section class="sale">
-            <!--sale-box-1-------------------->
-            <div class="sale-box sale-1">
-                <img src="pics/bag with roses.jpg">
+    </ul>
+    </div>
+    </div>
+    </div>
+    <!---sale------------------------------------>
+    <section class="sale">
+        <!--sale-box-1-------------------->
+        <div class="sale-box sale-1">
+            <img src="pics/bag with roses.jpg">
 
-                <a href="#">
-                    <div class="sale-text">
-                        <strong>Bag with rose pattern</strong>
-                        <span>Sale off 25%</span>
-                    </div>
-                </a>
-
-            </div>
-            <!--sale-box-2-------------------->
-            <div class="sale-box sale-1">
-                <img src="pics/everything_okay.png">
-                <a href="#" class="add-cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                    </svg>
-                </a>
-            </div>
             <a href="#">
                 <div class="sale-text">
-                    <strong>Hello Summer</strong>
-                    <span>Sale off 20%</span>
+                    <strong>Bag with rose pattern</strong>
+                    <span>Sale off 25%</span>
                 </div>
             </a>
 
+        </div>
+        <!--sale-box-2-------------------->
+        <div class="sale-box sale-1">
+            <img src="pics/everything_okay.png">
+            <a href="#" class="add-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </a>
+        </div>
+        <a href="#">
+            <div class="sale-text">
+                <strong>Hello Summer</strong>
+                <span>Sale off 20%</span>
             </div>
-            <!--sale-box-3-------------------->
-            <div class="sale-box sale-1">
-                <img src="pics/party pillow.jpeg">
+        </a>
 
-                <a href="#">
-                    <div class="sale-text">
-                        <strong>Let's Party Hard Pillow</strong>
-                        <span>Sale off 25%</span>
-                    </div>
-                </a>
+        </div>
+        <!--sale-box-3-------------------->
+        <div class="sale-box sale-1">
+            <img src="pics/party pillow.jpeg">
 
-            </div>
+            <a href="#">
+                <div class="sale-text">
+                    <strong>Let's Party Hard Pillow</strong>
+                    <span>Sale off 25%</span>
+                </div>
+            </a>
 
-        </section>
+        </div>
+
+    </section>
 </body>
 <!-----footer-------------------->
 <section id="footer">
@@ -384,37 +369,37 @@
 
 </html>
 <script>
-   let db = [
-  {
-    ISO4217: '€',
-    multiply: 1
-  }, {
-    ISO4217: '₴',
-    multiply: 38.1
-  }, {
-    ISO4217: '$',
-    multiply: 1.05
-  }
-];
+    let db = [
+        {
+            ISO4217: '€',
+            multiply: 1
+        }, {
+            ISO4217: '₴',
+            multiply: 38.1
+        }, {
+            ISO4217: '$',
+            multiply: 1.05
+        }
+    ];
 
-document.querySelector('select').addEventListener('change', function (e) {
-  let option = db[this.selectedIndex];
-  // localStorage['someKey'] = this.selectedIndex;
-  
-  rebuildPrices(option);
-});
+    document.querySelector('select').addEventListener('change', function (e) {
+        let option = db[this.selectedIndex];
+        // localStorage['someKey'] = this.selectedIndex;
 
-
-let key = localStorage['someKey'];
-
-if(key) {
-  document.querySelector('select').selectedIndex = key;
-  rebuildPrices(db[key]);
-}
+        rebuildPrices(option);
+    });
 
 
+    let key = localStorage['someKey'];
 
-function rebuildPrices(option){
-  [...document.querySelectorAll('ul span')].forEach(span => span.innerHTML = `${+(+span.parentNode.dataset.cost * option.multiply).toFixed(3)} ${option.ISO4217}`);
-}
+    if (key) {
+        document.querySelector('select').selectedIndex = key;
+        rebuildPrices(db[key]);
+    }
+
+
+
+    function rebuildPrices(option) {
+        [...document.querySelectorAll('ul span')].forEach(span => span.innerHTML = `${+(+span.parentNode.dataset.cost * option.multiply).toFixed(3)} ${option.ISO4217}`);
+    }
 </script>

@@ -18,8 +18,9 @@ body {
   }
   
   .dropdown {
-    position: relative;
+    position: absolute;
     display: inline-block;
+    left: 0px;
   }
   
   .dropdown-content {
@@ -33,7 +34,7 @@ body {
   
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 20px 20px;
     text-decoration: none;
     display: block;
   }
@@ -41,8 +42,18 @@ body {
   .dropdown-content a:hover {background-color: #ddd;}
   
   .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: black;}
+  .dropdown:hover .dropbtn {background-color: black;
+}
+.svg-icon {
+    
+    position: relative;
+    top: .125em;
+    flex-shrink: 0;
+    height: 1em;
+    width: 1em;
+    fill: currentColor;
+   transition: fill .3s;
+}
 
 header {
     left: auto;
@@ -57,6 +68,24 @@ header {
     text-align: center;
     height: 80px;
     padding-top: 5px;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
 }
 
 .logo {
@@ -101,63 +130,16 @@ a {
     width: 30px;
     height: 30px;
     position: absolute;
-    right: -670px;
+    right: -500px;
     position: relative;
-    bottom: 15px;
+    bottom: 0px;
 }
 
-/* Hamburger */
-/*.hamburger1 {
-    height: 20px;
-    margin: 5px;
-    display: -ms-grid;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: left;
-    z-index: 120;
-
-}
-
-.hamburger1 div {
-    background-color: var(--white);
-    position: relative;
-    width: 40px;
-    height: 3px;
-    margin-top: 7px;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-#toggle1 {
-    display: none;
-}
-
-#toggle1:checked+.hamburger1 .top {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    margin-top: 22.5px;
-}
-
-#toggle1:checked+.hamburger1 .meat {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    margin-top: -5px;
-}
-
-#toggle1:checked+.hamburger1 .bottom {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
-
-#toggle1:checked~.menu1 {
-    height: 340px;
-}*/
-
-
-.currancyButton {
-    background-color: black;
+.currencyButton {
+    background-color: rgb(0, 0, 0);
     color: white;
-    left: 1;
+    right: 130px;
+    position: absolute;
 }
 
 
@@ -275,29 +257,6 @@ a {
     margin: 10px auto 40px auto;
 }
 
-.arrival-heading strong {
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    color: #1b1919;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-top: 40px;
-    padding: 5px 30px;
-    border: 1px solid #e0e0e0;
-}
-
-.arrival-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.arrival-heading strong {
-    color: #ffffff;
-    background-color: #202020;
-    font-weight: 500;
-}
 
 .arrival-heading p {
     color: #808080;
@@ -311,7 +270,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .product-box {
@@ -320,7 +279,7 @@ a {
     flex-direction: column;
     align-items: center;
     border: 1px solid #f7f7f7;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 20px;
 }
 
@@ -348,9 +307,22 @@ a {
     border-top: 1px solid #f3f3f3;
 }
 
+li {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margins */
+}
+
+.btn {
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
 .add-cart {
     position: absolute;
-    /* i changed it instead of absolute to make icon look more to the up */
     left: -20px;
     bottom: -60px;
     width: 40px;
@@ -360,7 +332,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     display: none;
     animation-name: fade;
@@ -385,17 +357,17 @@ a {
 }
 
 
-
-
-
 .add-cart:hover {
     background-color: grey;
+    opacity: 0.2;
     animation-delay: 3s;
     transition: all ease 0.2s;
+    cursor: pointer;
 }
 
 .product-box:hover .add-cart {
     display: flex;
+
 }
 
 .new-arrival {
@@ -432,8 +404,8 @@ a {
 
 .sale-text {
     position: absolute;
-    left: 20%;
-    top: 50%;
+    bottom: -40px;
+    text-align: center;
     transform: translate(-20%, -50%);
     display: flex;
     flex-direction: column;
@@ -446,7 +418,7 @@ a {
 .sale-text strong {
     font-size: 1.2rem;
     font-weight: 500;
-    width: 80%;
+    width: 100%;
     line-height: 23px;
 }
 
