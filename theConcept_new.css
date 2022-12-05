@@ -27,6 +27,24 @@ header {
     padding-top: 5px;
 }
 
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
 .logo {
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
@@ -309,6 +327,12 @@ a {
     border-top: 1px solid #f3f3f3;
 }
 
+.btn {
+
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
 .add-cart {
     position: absolute;
     /* i changed it instead of absolute to make icon look more to the up */
@@ -321,7 +345,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     display: none;
     animation-name: fade;
@@ -346,17 +370,17 @@ a {
 }
 
 
-
-
-
 .add-cart:hover {
     background-color: grey;
+    opacity: 0.2;
     animation-delay: 3s;
     transition: all ease 0.2s;
+    cursor: pointer;
 }
 
 .product-box:hover .add-cart {
     display: flex;
+
 }
 
 .new-arrival {
