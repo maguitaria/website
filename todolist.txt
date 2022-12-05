@@ -5,3 +5,64 @@
   https://www.w3schools.com/cssref/tryit.php?filename=trycss3_animation-iteration-count
 
   https://x11.x10hosting.com:2222/CMD_FILE_MANAGER?path=%2Fdomains%2Ftheconcept.x10.mx%2Fpublic_html 
+
+  <!--product-categories-slider---------------------->
+    <ul id="autoWidth" class="container" class="cs-hidden">
+        <!--box-1--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                </a>
+            </div>
+            <span>T-Shirts</span>
+        </li>
+        <!--box-2--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                </a>
+            </div>
+            <span>Men T-Shirts</span>
+        </li>
+        <!--box-3--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                </a>
+            </div>
+            <span>Kids T-Shirts</span>
+        </li>
+        <!--box-4--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                </a>
+            </div>
+            <span>Pillow</span>
+        </li>
+        <!--box-5--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                </a>
+            </div>
+            <span>Phone Cover</span>
+        </li>
+        <!--box-6--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                </a>
+            </div>
+            <span>Shopping Bags</span>
+        </li>
+
+    </ul>
+    <!--NEW ARRIVAL-------------------------------->
+    <section class="new-arrival">
+
+        <!--heading-------->
+        <div class="arrival-heading">
+            <strong>New Arrival</strong>
+            <p>We Provide You New Fasion Design Clothes</p>
+        </div>
