@@ -4,10 +4,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-html,
-body {
     scroll-behavior: smooth;
     height: 100%;
     margin: 0;
@@ -88,9 +84,9 @@ a {
     width: 30px;
     height: 30px;
     position: absolute;
-    right: -670px;
+    right: -500px;
     position: relative;
-    bottom: 15px;
+    bottom: 0px;
 }
 
 /* Hamburger */
