@@ -351,12 +351,14 @@ li {
 .p-name {
     /*product cart */
     color: #727272;
+
 }
 
 .p-price {
     color: #333333;
     font-size: 1.2rem;
     font-weight: 400;
+
 }
 
 .product-box:hover {
