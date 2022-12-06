@@ -402,6 +402,12 @@ li {
 
 }
 
+.saleTxt{
+    position: relative;
+    bottom: 250px;
+    left: 50%;
+}
+
 .sale-box {
     width: 280px;
     border-radius: 20px;
