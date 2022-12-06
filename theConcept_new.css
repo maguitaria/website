@@ -402,10 +402,13 @@ li {
 
 }
 
-.saleTxt{
+.saleTxt {
     position: relative;
     bottom: 250px;
     left: 50%;
+    text-align: center;
+    padding: 50px;
+
 }
 
 .sale-box {
