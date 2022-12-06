@@ -328,6 +328,13 @@ li {
     cursor: pointer;
 }
 
+
+.cart-icon-product:hover {
+    fill: white;
+    cursor: pointer;
+}
+
+
 .add-cart {
     position: absolute;
     left: -20px;
@@ -338,13 +345,18 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: rgb(0, 0, 0);
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #989898;
+    box-shadow: 2px 2px 30px #989898;
     display: none;
-    animation-name: fade;
     animation-delay: 3s;
 
+}
+
+.add-cart:hover {
+    background-color: black;
+    animation-delay: 3s;
+    transition: all ease 0.2s;
+    cursor: pointer;
 }
 
 .p-name {
@@ -366,13 +378,7 @@ li {
 }
 
 
-.add-cart:hover {
-    background-color: grey;
-    opacity: 0.2;
-    animation-delay: 3s;
-    transition: all ease 0.2s;
-    cursor: pointer;
-}
+
 
 .product-box:hover .add-cart {
     display: flex;
@@ -591,12 +597,12 @@ textarea {
     padding: 0 0 0.875em 0;
     width: 100%;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    -box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
+    -transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -621,8 +627,7 @@ textarea:focus {
 select {
     background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
     outline: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+
 }
 
 select::-ms-expand {
@@ -638,20 +643,6 @@ textarea {
     height: 150px;
     resize: none;
     width: 100%;
-}
-
-::-webkit-input-placeholder {
-    color: #474544;
-}
-
-:-moz-placeholder {
-    color: #474544;
-    opacity: 1;
-}
-
-::-moz-placeholder {
-    color: #474544;
-    opacity: 1;
 }
 
 :-ms-input-placeholder {
@@ -670,8 +661,7 @@ textarea {
     outline: none;
     padding: 20px 35px;
     text-transform: uppercase;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
+
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
