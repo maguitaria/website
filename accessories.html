@@ -93,3 +93,38 @@
 </footer>
 
 </html>
+<script>
+    let db = [
+        {
+            ISO4217: '€',
+            multiply: 1
+        }, {
+            ISO4217: '₴',
+            multiply: 38.1
+        }, {
+            ISO4217: '$',
+            multiply: 1.05
+        }
+    ];
+
+    document.querySelector('select').addEventListener('change', function (e) {
+        let option = db[this.selectedIndex];
+        // localStorage['someKey'] = this.selectedIndex;
+
+        rebuildPrices(option);
+    });
+
+
+    let key = localStorage['someKey'];
+
+    if (key) {
+        document.querySelector('select').selectedIndex = key;
+        rebuildPrices(db[key]);
+    }
+
+
+
+    function rebuildPrices(option) {
+        [...document.querySelectorAll('ul span')].forEach(span => span.innerHTML = `${+(+span.parentNode.dataset.cost * option.multiply).toFixed(3)} ${option.ISO4217}`);
+    }
+</script>
