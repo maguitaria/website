@@ -133,21 +133,20 @@ a {
     text-decoration: none;
 }
 
-.cart-icon {
-
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: -500px;
-    position: relative;
-    bottom: 0px;
-}
-
 .currencyButton {
     background-color: rgb(0, 0, 0);
     color: white;
     right: 130px;
     position: absolute;
+}
+
+.cart-icon {
+
+    width: 30px;
+    height: 30px;
+    right: -500px;
+    position: relative;
+    bottom: 0px;
 }
 
 
