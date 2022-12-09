@@ -9,6 +9,7 @@
 </head>
 <header>
     <div class="dropdown">
+
         <svg class="svg-icon" role="img" height="10" width="10" viewBox="0 0 10 10" aria-hidden="true"
             focusable="false">
             <path d="m1 7h8v2h-8zm0-3h8v2h-8zm0-3h8v2h-8z" />
@@ -51,12 +52,105 @@
             </path>
         </svg>
     </a>
-    </nav>
-    </section>
+
 </header>
 
 <body>
+    <ul>
+        <!--products----------------------->
+        <div class="product-container">
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="cart.html" class="add-cart">
 
+                        <svg class="cart-icon-product" a href="cart.html" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
+                            <path
+                                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z">
+                            </path>
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        </svg>
+                    </a>
+                    <!--img------>
+                    <img src="pics/long T-short.webp">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <li data-cost='22.00'>
+
+                        <a href="cart.html" class="p-name">MM6 long T-Shirt</a>
+                        <span class="p-price"><br>22.00 </span><br></span>
+
+                    </li>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="cart.html" class="add-cart">
+
+                        <svg class="cart-icon-product" a href="cart.html" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
+                            <path
+                                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z">
+                            </path>
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        </svg>
+                    </a>
+                    <!--img------>
+                    <img src="pics/versace T-short.webp">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <li data-cost='22.00'>
+                        <a href="#" class="p-name">Versace T-Shirt</a>
+
+                        <span class="p-price"><br>22.00€ </span><br></span>
+
+                    </li>
+                </div>
+            </div>
+            <!--product-box-7---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="cart.html" class="add-cart">
+
+                        <svg class="cart-icon-product" a href="cart.html" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
+                            <path
+                                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z">
+                            </path>
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        </svg>
+                    </a>
+                    <!--img------>
+                    <img src="pics/fur hat.png">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <li data-cost='22.00'>
+                        <a href="#" class="p-name">fur hat</a>
+
+                        <span class="p-price"><br>22.00 </span><br></span>
+
+                    </li>
+                </div>
+            </div>
+
+
+    </ul>
+    </div>
+    </div>
+    </div>
 </body>
 <footer>
     <section id="footer">
@@ -76,19 +170,41 @@
                 <a href=""><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-    </section>
-
-    <div class="container">
-
-        <div class="item">
-
-            <a href="pics/everything_okay.png">
-        </div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
 </footer>
 
 </html>
+<script>
+    let db = [
+        {
+            ISO4217: '€',
+            multiply: 1
+        }, {
+            ISO4217: '₴',
+            multiply: 38.1
+        }, {
+            ISO4217: '$',
+            multiply: 1.05
+        }
+    ];
+
+    document.querySelector('select').addEventListener('change', function (e) {
+        let option = db[this.selectedIndex];
+        // localStorage['someKey'] = this.selectedIndex;
+
+        rebuildPrices(option);
+    });
+
+
+    let key = localStorage['someKey'];
+
+    if (key) {
+        document.querySelector('select').selectedIndex = key;
+        rebuildPrices(db[key]);
+    }
+
+
+
+    function rebuildPrices(option) {
+        [...document.querySelectorAll('ul span')].forEach(span => span.innerHTML = `${+(+span.parentNode.dataset.cost * option.multiply).toFixed(3)} ${option.ISO4217}`);
+    }
+</script>
