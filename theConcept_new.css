@@ -15,6 +15,7 @@ body {
     padding: 16px;
     font-size: 16px;
     border: none;
+    height: 80px;
 }
 
 .dropdown {
@@ -75,6 +76,24 @@ header {
     text-align: center;
     height: 80px;
     padding-top: 5px;
+}
+.man{
+    left: 20px;
+    position: relative;
+    font-family: 'Alfa Slab One', cursive;
+    justify-content: right;
+}
+.woman{
+    left: 20px;
+    position: relative;
+    font-family: 'Alfa Slab One', cursive;
+    justify-content: right;
+}
+.accessories{
+    left: 20px;
+    position: relative;
+    font-family: 'Alfa Slab One', cursive;
+    justify-content: right;
 }
 
 .sale {
@@ -190,7 +209,7 @@ a {
 .currencyButton {
     background-color: rgb(0, 0, 0);
     color: white;
-    right: 130px;
+    right: 300px;
     position: absolute;
 }
 
@@ -198,7 +217,7 @@ a {
 
     width: 30px;
     height: 30px;
-    right: -500px;
+    right: -550px;
     position: relative;
     bottom: 0px;
 }
@@ -665,3 +684,4 @@ textarea {
         font-size: 0.875em;
     }
 }
+/*************CART*****************/
