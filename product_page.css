@@ -1,7 +1,13 @@
 html,
 body {
-
     font-family: 'Roboto', sans-serif;
+}
+
+.currencyButton {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    right: 300px;
+    position: absolute;
 }
 
 .container {
